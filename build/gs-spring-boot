@@ -1,0 +1,971 @@
+[2m2019-05-15 15:05:01.147[0;39m [31mERROR [gs-spring-boot,,,][0;39m [35m24458[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [encoder] of type [net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder] java.lang.ClassNotFoundException: net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@57:24 - no applicable action for [providers], current ElementPath  is [[configuration][appender][encoder][providers]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@58:28 - no applicable action for [timestamp], current ElementPath  is [[configuration][appender][encoder][providers][timestamp]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@59:31 - no applicable action for [timeZone], current ElementPath  is [[configuration][appender][encoder][providers][timestamp][timeZone]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@61:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][providers][pattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@62:30 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][providers][pattern][pattern]]
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[jsonlog] - No encoder set for the appender named "jsonlog".
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:292)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:265)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:228)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:201)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:208)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at hello.ApplicationTest.main(ApplicationTest.java:25)
+
+[2m2019-05-15 15:05:01.153[0;39m [31mERROR [gs-spring-boot,,,][0;39m [35m24458[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [encoder] of type [net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder] java.lang.ClassNotFoundException: net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@57:24 - no applicable action for [providers], current ElementPath  is [[configuration][appender][encoder][providers]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@58:28 - no applicable action for [timestamp], current ElementPath  is [[configuration][appender][encoder][providers][timestamp]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@59:31 - no applicable action for [timeZone], current ElementPath  is [[configuration][appender][encoder][providers][timestamp][timeZone]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@61:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][providers][pattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@62:30 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][providers][pattern][pattern]]
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[jsonlog] - No encoder set for the appender named "jsonlog".
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:292)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:265)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:228)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:201)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:208)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at hello.ApplicationTest.main(ApplicationTest.java:25)
+
+[2m2019-05-15 15:05:48.102[0;39m [31mERROR [gs-spring-boot,,,][0;39m [35m24572[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [encoder] of type [net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder] java.lang.ClassNotFoundException: net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@57:24 - no applicable action for [providers], current ElementPath  is [[configuration][appender][encoder][providers]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@58:28 - no applicable action for [timestamp], current ElementPath  is [[configuration][appender][encoder][providers][timestamp]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@59:31 - no applicable action for [timeZone], current ElementPath  is [[configuration][appender][encoder][providers][timestamp][timeZone]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@61:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][providers][pattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@62:30 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][providers][pattern][pattern]]
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[jsonlog] - No encoder set for the appender named "jsonlog".
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:292)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:265)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:228)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:201)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:208)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at hello.ApplicationTest.main(ApplicationTest.java:25)
+
+[2m2019-05-15 15:05:48.109[0;39m [31mERROR [gs-spring-boot,,,][0;39m [35m24572[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [encoder] of type [net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder] java.lang.ClassNotFoundException: net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@57:24 - no applicable action for [providers], current ElementPath  is [[configuration][appender][encoder][providers]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@58:28 - no applicable action for [timestamp], current ElementPath  is [[configuration][appender][encoder][providers][timestamp]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@59:31 - no applicable action for [timeZone], current ElementPath  is [[configuration][appender][encoder][providers][timestamp][timeZone]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@61:26 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][providers][pattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@62:30 - no applicable action for [pattern], current ElementPath  is [[configuration][appender][encoder][providers][pattern][pattern]]
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[jsonlog] - No encoder set for the appender named "jsonlog".
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:292)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:265)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:228)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:201)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:208)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at hello.ApplicationTest.main(ApplicationTest.java:25)
+
+[2m2019-05-15 15:06:29.226[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ee462e00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 15:06:29.427[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2019-05-15 15:06:30.318[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.boot.actuate.endpoint.EndpointId    [0;39m [2m:[0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2m2019-05-15 15:06:30.639[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=ad036997-8043-340a-b986-d21623e50167
+[2m2019-05-15 15:06:30.903[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ee462e00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 15:06:31.268[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2019-05-15 15:06:31.290[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2019-05-15 15:06:31.290[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.17]
+[2m2019-05-15 15:06:31.388[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2019-05-15 15:06:31.388[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.web.context.ContextLoader           [0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1945 ms
+[2m2019-05-15 15:06:31.638[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 15:06:31.639[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 15:06:31.643[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.netflix.config.DynamicPropertyFactory [0;39m [2m:[0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6c1cfa53
+[2m2019-05-15 15:06:32.366[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 15:06:32.366[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 15:06:32.695[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 15:06:33.368[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Current Hystrix plugins configuration is [concurrencyStrategy [com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategyDefault@63d677f5],eventNotifier [com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifierDefault@71d55b7e],metricPublisher [io.micrometer.core.instrument.binder.hystrix.MicrometerMetricsPublisher@2997ddfc],propertiesStrategy [com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategyDefault@28ee882c],]
+[2m2019-05-15 15:06:33.368[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Registering Sleuth Hystrix Concurrency Strategy.
+[2m2019-05-15 15:06:33.384[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Current RxJava plugins configuration is [schedulersHook [rx.plugins.RxJavaSchedulersHook@29c53c4f],errorHandler [rx.plugins.RxJavaPlugins$1@3009eed7],observableExecutionHook [rx.plugins.RxJavaObservableExecutionHookDefault@2ee4706d],]
+[2m2019-05-15 15:06:33.385[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Registering Sleuth RxJava Schedulers Hook.
+[2m2019-05-15 15:06:33.403[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2019-05-15 15:06:33.534[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.eureka.InstanceInfoFactory      [0;39m [2m:[0;39m Setting initial instance status as: STARTING
+[2m2019-05-15 15:06:33.578[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Initializing Eureka in region us-east-1
+[2m2019-05-15 15:06:33.771[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON encoding codec LegacyJacksonJson
+[2m2019-05-15 15:06:33.772[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON decoding codec LegacyJacksonJson
+[2m2019-05-15 15:06:33.917[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML encoding codec XStreamXml
+[2m2019-05-15 15:06:33.917[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML decoding codec XStreamXml
+[2m2019-05-15 15:06:34.119[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 15:06:34.142[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Disable delta property : false
+[2m2019-05-15 15:06:34.143[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Single vip registry refresh property : null
+[2m2019-05-15 15:06:34.143[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Force full registry fetch : false
+[2m2019-05-15 15:06:34.143[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application is null : false
+[2m2019-05-15 15:06:34.143[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Registered Applications size is zero : true
+[2m2019-05-15 15:06:34.143[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application version is -1: true
+[2m2019-05-15 15:06:34.143[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Getting all instance registry info from the eureka server
+[2m2019-05-15 15:06:34.300[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m The response status is 200
+[2m2019-05-15 15:06:34.304[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Starting heartbeat executor: renew interval is: 30
+[2m2019-05-15 15:06:34.307[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.discovery.InstanceInfoReplicator    [0;39m [2m:[0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2m2019-05-15 15:06:34.311[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Discovery Client initialized at timestamp 1557903994310 with initial instances count: 2
+[2m2019-05-15 15:06:34.321[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Registering application GS-SPRING-BOOT with eureka with status UP
+[2m2019-05-15 15:06:34.321[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557903994321, current=UP, previous=STARTING]
+[2m2019-05-15 15:06:34.323[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot: registering service...
+[2m2019-05-15 15:06:34.369[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - registration status: 204
+[2m2019-05-15 15:06:34.423[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2019-05-15 15:06:34.427[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[           main][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m Started ApplicationTest in 7.054 seconds (JVM running for 8.258)
+[2m2019-05-15 15:06:34.829[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2019-05-15 15:06:34.830[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2019-05-15 15:06:34.830[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Detected StandardServletMultipartResolver
+[2m2019-05-15 15:06:34.849[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2m2019-05-15 15:06:34.849[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 19 ms
+[2m2019-05-15 15:06:43.062[0;39m [32mDEBUG [gs-spring-boot,6986f5100fbc0f86,6986f5100fbc0f86,false][0;39m [35m24638[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 15:06:43.082[0;39m [32m INFO [gs-spring-boot,6986f5100fbc0f86,6986f5100fbc0f86,false][0;39m [35m24638[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 15:06:43.098[0;39m [32mDEBUG [gs-spring-boot,6986f5100fbc0f86,6986f5100fbc0f86,false][0;39m [35m24638[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 15:11:34.145[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 15:16:34.146[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 15:21:34.147[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 15:26:34.148[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 15:31:10.666[0;39m [32mDEBUG [gs-spring-boot,5ae2903442b67ad6,5ae2903442b67ad6,false][0;39m [35m24638[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 15:31:10.670[0;39m [32m INFO [gs-spring-boot,5ae2903442b67ad6,5ae2903442b67ad6,false][0;39m [35m24638[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 15:31:10.678[0;39m [32mDEBUG [gs-spring-boot,5ae2903442b67ad6,5ae2903442b67ad6,false][0;39m [35m24638[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 15:31:34.149[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 15:36:34.150[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 15:41:34.151[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 15:46:34.153[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 15:51:34.154[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 15:51:53.579[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e938adc3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 15:51:53.772[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mhello.ApplicationMicserver              [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2019-05-15 15:51:54.718[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.boot.actuate.endpoint.EndpointId    [0;39m [2m:[0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2m2019-05-15 15:51:55.012[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=b111366f-9359-39ac-b6f0-d21cdcf07ab3
+[2m2019-05-15 15:51:55.264[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e938adc3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 15:51:55.670[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2019-05-15 15:51:55.701[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2019-05-15 15:51:55.702[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.17]
+[2m2019-05-15 15:51:55.905[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2019-05-15 15:51:55.906[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.web.context.ContextLoader           [0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2117 ms
+[2m2019-05-15 15:51:56.073[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 15:51:56.074[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 15:51:56.080[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.netflix.config.DynamicPropertyFactory [0;39m [2m:[0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6e4599c0
+[2m2019-05-15 15:51:56.937[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 15:51:56.937[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 15:51:57.241[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 15:51:57.991[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Current Hystrix plugins configuration is [concurrencyStrategy [com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategyDefault@7b9e25bd],eventNotifier [com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifierDefault@2d206a71],metricPublisher [io.micrometer.core.instrument.binder.hystrix.MicrometerMetricsPublisher@37e7c4cc],propertiesStrategy [com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategyDefault@3a40bb52],]
+[2m2019-05-15 15:51:57.991[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Registering Sleuth Hystrix Concurrency Strategy.
+[2m2019-05-15 15:51:58.008[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Current RxJava plugins configuration is [schedulersHook [rx.plugins.RxJavaSchedulersHook@5122e4bf],errorHandler [rx.plugins.RxJavaPlugins$1@23e61112],observableExecutionHook [rx.plugins.RxJavaObservableExecutionHookDefault@58a7dc4],]
+[2m2019-05-15 15:51:58.008[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Registering Sleuth RxJava Schedulers Hook.
+[2m2019-05-15 15:51:58.025[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2019-05-15 15:51:58.193[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.eureka.InstanceInfoFactory      [0;39m [2m:[0;39m Setting initial instance status as: STARTING
+[2m2019-05-15 15:51:58.241[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Initializing Eureka in region us-east-1
+[2m2019-05-15 15:51:58.421[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON encoding codec LegacyJacksonJson
+[2m2019-05-15 15:51:58.422[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON decoding codec LegacyJacksonJson
+[2m2019-05-15 15:51:58.539[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML encoding codec XStreamXml
+[2m2019-05-15 15:51:58.540[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML decoding codec XStreamXml
+[2m2019-05-15 15:51:58.727[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 15:51:58.745[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Disable delta property : false
+[2m2019-05-15 15:51:58.745[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Single vip registry refresh property : null
+[2m2019-05-15 15:51:58.745[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Force full registry fetch : false
+[2m2019-05-15 15:51:58.745[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application is null : false
+[2m2019-05-15 15:51:58.745[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Registered Applications size is zero : true
+[2m2019-05-15 15:51:58.745[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application version is -1: true
+[2m2019-05-15 15:51:58.745[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Getting all instance registry info from the eureka server
+[2m2019-05-15 15:51:58.897[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m The response status is 200
+[2m2019-05-15 15:51:58.900[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Starting heartbeat executor: renew interval is: 30
+[2m2019-05-15 15:51:58.903[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.discovery.InstanceInfoReplicator    [0;39m [2m:[0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2m2019-05-15 15:51:58.907[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Discovery Client initialized at timestamp 1557906718906 with initial instances count: 2
+[2m2019-05-15 15:51:58.915[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Registering application GS-SPRING-BOOT with eureka with status UP
+[2m2019-05-15 15:51:58.915[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557906718915, current=UP, previous=STARTING]
+[2m2019-05-15 15:51:58.918[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot: registering service...
+[2m2019-05-15 15:51:58.957[0;39m [31mERROR [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.util.LifecycleBase  [0;39m [2m:[0;39m Failed to start component [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at hello.ApplicationMicserver.main(ApplicationMicserver.java:25)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1103)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1189)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+
+[2m2019-05-15 15:51:58.963[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2m2019-05-15 15:51:58.965[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - registration status: 204
+[2m2019-05-15 15:51:58.969[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.c.loader.WebappClassLoaderBase      [0;39m [2m:[0;39m The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+[2m2019-05-15 15:51:58.975[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2m2019-05-15 15:51:58.979[0;39m [31mERROR [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.d.LoggingFailureAnalysisReporter  [0;39m [2m:[0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+[2m2019-05-15 15:51:58.983[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Unregistering application GS-SPRING-BOOT with eureka with status DOWN
+[2m2019-05-15 15:51:58.983[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557906718983, current=DOWN, previous=UP]
+[2m2019-05-15 15:51:58.983[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot: registering service...
+[2m2019-05-15 15:51:58.986[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 15:51:58.988[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - registration status: 204
+[2m2019-05-15 15:51:58.993[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Shutting down DiscoveryClient ...
+[2m2019-05-15 15:51:58.995[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26137[0;39m [2m---[0;39m [2m[           main][0;39m [36m.s.c.a.CommonAnnotationBeanPostProcessor[0;39m [2m:[0;39m Destroy method on bean with name 'scopedTarget.eurekaClient' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+[2m2019-05-15 15:52:50.849[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$df341d2a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 15:52:51.061[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mhello.ApplicationMicserver              [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2019-05-15 15:52:52.043[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.boot.actuate.endpoint.EndpointId    [0;39m [2m:[0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2m2019-05-15 15:52:52.348[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=b111366f-9359-39ac-b6f0-d21cdcf07ab3
+[2m2019-05-15 15:52:52.579[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$df341d2a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 15:52:52.989[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8081 (http)
+[2m2019-05-15 15:52:53.015[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2019-05-15 15:52:53.016[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.17]
+[2m2019-05-15 15:52:53.187[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2019-05-15 15:52:53.187[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.web.context.ContextLoader           [0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2107 ms
+[2m2019-05-15 15:52:53.339[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 15:52:53.339[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 15:52:53.344[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.netflix.config.DynamicPropertyFactory [0;39m [2m:[0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4f3faa70
+[2m2019-05-15 15:52:54.061[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 15:52:54.062[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 15:52:54.391[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 15:52:55.090[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Current Hystrix plugins configuration is [concurrencyStrategy [com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategyDefault@7b6141f0],eventNotifier [com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifierDefault@4fb64a52],metricPublisher [io.micrometer.core.instrument.binder.hystrix.MicrometerMetricsPublisher@70b48eb3],propertiesStrategy [com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategyDefault@7b8ea1db],]
+[2m2019-05-15 15:52:55.091[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Registering Sleuth Hystrix Concurrency Strategy.
+[2m2019-05-15 15:52:55.108[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Current RxJava plugins configuration is [schedulersHook [rx.plugins.RxJavaSchedulersHook@224d86d2],errorHandler [rx.plugins.RxJavaPlugins$1@a3cba3a],observableExecutionHook [rx.plugins.RxJavaObservableExecutionHookDefault@2aea717c],]
+[2m2019-05-15 15:52:55.108[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Registering Sleuth RxJava Schedulers Hook.
+[2m2019-05-15 15:52:55.127[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2019-05-15 15:52:55.253[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.eureka.InstanceInfoFactory      [0;39m [2m:[0;39m Setting initial instance status as: STARTING
+[2m2019-05-15 15:52:55.284[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Initializing Eureka in region us-east-1
+[2m2019-05-15 15:52:55.451[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON encoding codec LegacyJacksonJson
+[2m2019-05-15 15:52:55.452[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON decoding codec LegacyJacksonJson
+[2m2019-05-15 15:52:55.570[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML encoding codec XStreamXml
+[2m2019-05-15 15:52:55.570[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML decoding codec XStreamXml
+[2m2019-05-15 15:52:55.748[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 15:52:55.765[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Disable delta property : false
+[2m2019-05-15 15:52:55.766[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Single vip registry refresh property : null
+[2m2019-05-15 15:52:55.766[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Force full registry fetch : false
+[2m2019-05-15 15:52:55.766[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application is null : false
+[2m2019-05-15 15:52:55.766[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Registered Applications size is zero : true
+[2m2019-05-15 15:52:55.766[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application version is -1: true
+[2m2019-05-15 15:52:55.766[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Getting all instance registry info from the eureka server
+[2m2019-05-15 15:52:55.912[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m The response status is 200
+[2m2019-05-15 15:52:55.915[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Starting heartbeat executor: renew interval is: 30
+[2m2019-05-15 15:52:55.918[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.discovery.InstanceInfoReplicator    [0;39m [2m:[0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2m2019-05-15 15:52:55.922[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Discovery Client initialized at timestamp 1557906775921 with initial instances count: 2
+[2m2019-05-15 15:52:55.930[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Registering application GS-SPRING-BOOT with eureka with status UP
+[2m2019-05-15 15:52:55.931[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557906775931, current=UP, previous=STARTING]
+[2m2019-05-15 15:52:55.933[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot:8081: registering service...
+[2m2019-05-15 15:52:55.993[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot:8081 - registration status: 204
+[2m2019-05-15 15:52:56.005[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8081 (http) with context path ''
+[2m2019-05-15 15:52:56.008[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[           main][0;39m [36mhello.ApplicationMicserver              [0;39m [2m:[0;39m Started ApplicationMicserver in 6.773 seconds (JVM running for 7.488)
+[2m2019-05-15 15:52:56.805[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[on(6)-127.0.0.1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2019-05-15 15:52:56.809[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[on(6)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2019-05-15 15:52:56.809[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[on(6)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Detected StandardServletMultipartResolver
+[2m2019-05-15 15:52:56.831[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[on(6)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2m2019-05-15 15:52:56.831[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[on(6)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 22 ms
+[2m2019-05-15 15:53:25.646[0;39m [32mDEBUG [gs-spring-boot,829a7378fc5ae138,829a7378fc5ae138,false][0;39m [35m26250[0;39m [2m---[0;39m [2m[nio-8081-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/ts", parameters={}
+[2m2019-05-15 15:53:25.666[0;39m [32m INFO [gs-spring-boot,829a7378fc5ae138,829a7378fc5ae138,false][0;39m [35m26250[0;39m [2m---[0;39m [2m[nio-8081-exec-1][0;39m [36mhello.ApplicationMicserver              [0;39m [2m:[0;39m test................................
+[2m2019-05-15 15:53:25.685[0;39m [32mDEBUG [gs-spring-boot,829a7378fc5ae138,829a7378fc5ae138,false][0;39m [35m26250[0;39m [2m---[0;39m [2m[nio-8081-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 15:53:25.706[0;39m [32mDEBUG [gs-spring-boot,dc1db3ba5ec2e94c,dc1db3ba5ec2e94c,false][0;39m [35m26250[0;39m [2m---[0;39m [2m[nio-8081-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/favicon.ico", parameters={}
+[2m2019-05-15 15:53:25.724[0;39m [32mDEBUG [gs-spring-boot,dc1db3ba5ec2e94c,dc1db3ba5ec2e94c,false][0;39m [35m26250[0;39m [2m---[0;39m [2m[nio-8081-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 15:55:45.506[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[      Thread-22][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Unregistering application GS-SPRING-BOOT with eureka with status DOWN
+[2m2019-05-15 15:55:45.506[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[      Thread-22][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557906945506, current=DOWN, previous=UP]
+[2m2019-05-15 15:55:45.506[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot:8081: registering service...
+[2m2019-05-15 15:55:45.509[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[      Thread-22][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 15:55:45.511[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot:8081 - registration status: 204
+[2m2019-05-15 15:55:45.517[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[      Thread-22][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Shutting down DiscoveryClient ...
+[2m2019-05-15 15:55:45.519[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26250[0;39m [2m---[0;39m [2m[      Thread-22][0;39m [36m.s.c.a.CommonAnnotationBeanPostProcessor[0;39m [2m:[0;39m Destroy method on bean with name 'scopedTarget.eurekaClient' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+[2m2019-05-15 15:56:23.515[0;39m [32mDEBUG [gs-spring-boot,3045cc2f5877b48a,3045cc2f5877b48a,false][0;39m [35m24638[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/actuator/info", parameters={}
+[2m2019-05-15 15:56:23.542[0;39m [32mDEBUG [gs-spring-boot,3045cc2f5877b48a,3045cc2f5877b48a,false][0;39m [35m24638[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 15:56:23.566[0;39m [32mDEBUG [gs-spring-boot,672b1ec3b4fec6be,672b1ec3b4fec6be,false][0;39m [35m24638[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/favicon.ico", parameters={}
+[2m2019-05-15 15:56:23.580[0;39m [32mDEBUG [gs-spring-boot,672b1ec3b4fec6be,672b1ec3b4fec6be,false][0;39m [35m24638[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 15:56:31.647[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Unregistering application GS-SPRING-BOOT with eureka with status DOWN
+[2m2019-05-15 15:56:31.647[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557906991647, current=DOWN, previous=UP]
+[2m2019-05-15 15:56:31.647[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot: registering service...
+[2m2019-05-15 15:56:31.650[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 15:56:31.651[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - registration status: 204
+[2m2019-05-15 15:56:31.655[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Shutting down DiscoveryClient ...
+[2m2019-05-15 15:56:31.657[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m24638[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36m.s.c.a.CommonAnnotationBeanPostProcessor[0;39m [2m:[0;39m Destroy method on bean with name 'scopedTarget.eurekaClient' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+[2m2019-05-15 15:56:51.443[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3bf57dc9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 15:56:51.617[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2019-05-15 15:56:52.635[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.boot.actuate.endpoint.EndpointId    [0;39m [2m:[0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2m2019-05-15 15:56:53.013[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=ad036997-8043-340a-b986-d21623e50167
+[2m2019-05-15 15:56:53.264[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3bf57dc9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 15:56:53.644[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2019-05-15 15:56:53.670[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2019-05-15 15:56:53.670[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.17]
+[2m2019-05-15 15:56:53.846[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2019-05-15 15:56:53.846[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.web.context.ContextLoader           [0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2216 ms
+[2m2019-05-15 15:56:53.997[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 15:56:53.997[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 15:56:54.003[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.netflix.config.DynamicPropertyFactory [0;39m [2m:[0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2ae62bb6
+[2m2019-05-15 15:56:54.792[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 15:56:54.792[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 15:56:55.095[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 15:56:55.760[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Current Hystrix plugins configuration is [concurrencyStrategy [com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategyDefault@129c4d19],eventNotifier [com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifierDefault@11810917],metricPublisher [io.micrometer.core.instrument.binder.hystrix.MicrometerMetricsPublisher@13278a41],propertiesStrategy [com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategyDefault@4a31ed12],]
+[2m2019-05-15 15:56:55.760[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Registering Sleuth Hystrix Concurrency Strategy.
+[2m2019-05-15 15:56:55.776[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Current RxJava plugins configuration is [schedulersHook [rx.plugins.RxJavaSchedulersHook@42a0786f],errorHandler [rx.plugins.RxJavaPlugins$1@477523ba],observableExecutionHook [rx.plugins.RxJavaObservableExecutionHookDefault@203e705e],]
+[2m2019-05-15 15:56:55.777[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Registering Sleuth RxJava Schedulers Hook.
+[2m2019-05-15 15:56:55.796[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2019-05-15 15:56:55.941[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.eureka.InstanceInfoFactory      [0;39m [2m:[0;39m Setting initial instance status as: STARTING
+[2m2019-05-15 15:56:55.978[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Initializing Eureka in region us-east-1
+[2m2019-05-15 15:56:56.125[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON encoding codec LegacyJacksonJson
+[2m2019-05-15 15:56:56.125[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON decoding codec LegacyJacksonJson
+[2m2019-05-15 15:56:56.244[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML encoding codec XStreamXml
+[2m2019-05-15 15:56:56.244[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML decoding codec XStreamXml
+[2m2019-05-15 15:56:56.411[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 15:56:56.427[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Disable delta property : false
+[2m2019-05-15 15:56:56.427[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Single vip registry refresh property : null
+[2m2019-05-15 15:56:56.427[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Force full registry fetch : false
+[2m2019-05-15 15:56:56.428[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application is null : false
+[2m2019-05-15 15:56:56.428[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Registered Applications size is zero : true
+[2m2019-05-15 15:56:56.428[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application version is -1: true
+[2m2019-05-15 15:56:56.428[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Getting all instance registry info from the eureka server
+[2m2019-05-15 15:56:56.594[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m The response status is 200
+[2m2019-05-15 15:56:56.598[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Starting heartbeat executor: renew interval is: 30
+[2m2019-05-15 15:56:56.600[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.discovery.InstanceInfoReplicator    [0;39m [2m:[0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2m2019-05-15 15:56:56.604[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Discovery Client initialized at timestamp 1557907016603 with initial instances count: 4
+[2m2019-05-15 15:56:56.612[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Registering application GS-SPRING-BOOT with eureka with status UP
+[2m2019-05-15 15:56:56.613[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557907016613, current=UP, previous=STARTING]
+[2m2019-05-15 15:56:56.615[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot: registering service...
+[2m2019-05-15 15:56:56.657[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - registration status: 204
+[2m2019-05-15 15:56:56.662[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2019-05-15 15:56:56.665[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[           main][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m Started ApplicationTest in 6.81 seconds (JVM running for 7.54)
+[2m2019-05-15 15:56:57.267[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[on(8)-127.0.0.1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2019-05-15 15:56:57.267[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[on(8)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2019-05-15 15:56:57.268[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[on(8)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Detected StandardServletMultipartResolver
+[2m2019-05-15 15:56:57.284[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[on(8)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2m2019-05-15 15:56:57.284[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[on(8)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 16 ms
+[2m2019-05-15 15:57:26.605[0;39m [31mERROR [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[tbeatExecutor-0][0;39m [36mc.n.d.s.t.d.RedirectingEurekaHttpClient [0;39m [2m:[0;39m Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 26 common frames omitted
+
+[2m2019-05-15 15:57:26.605[0;39m [31mERROR [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[freshExecutor-0][0;39m [36mc.n.d.s.t.d.RedirectingEurekaHttpClient [0;39m [2m:[0;39m Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1440)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 29 common frames omitted
+
+[2m2019-05-15 15:57:26.606[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[tbeatExecutor-0][0;39m [36mc.n.d.s.t.d.RetryableEurekaHttpClient   [0;39m [2m:[0;39m Request execution failed with message: java.net.ConnectException: Connection refused
+[2m2019-05-15 15:57:26.606[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[freshExecutor-0][0;39m [36mc.n.d.s.t.d.RetryableEurekaHttpClient   [0;39m [2m:[0;39m Request execution failed with message: java.net.ConnectException: Connection refused
+[2m2019-05-15 15:57:26.607[0;39m [31mERROR [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[tbeatExecutor-0][0;39m [36mc.n.d.s.t.d.RedirectingEurekaHttpClient [0;39m [2m:[0;39m Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 27 common frames omitted
+
+[2m2019-05-15 15:57:26.608[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[tbeatExecutor-0][0;39m [36mc.n.d.s.t.d.RetryableEurekaHttpClient   [0;39m [2m:[0;39m Request execution failed with message: java.net.ConnectException: Connection refused
+[2m2019-05-15 15:57:26.608[0;39m [31mERROR [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[freshExecutor-0][0;39m [36mc.n.d.s.t.d.RedirectingEurekaHttpClient [0;39m [2m:[0;39m Request execution error
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1440)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 common frames omitted
+
+[2m2019-05-15 15:57:26.609[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[freshExecutor-0][0;39m [36mc.n.d.s.t.d.RetryableEurekaHttpClient   [0;39m [2m:[0;39m Request execution failed with message: java.net.ConnectException: Connection refused
+[2m2019-05-15 15:57:26.610[0;39m [31mERROR [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[tbeatExecutor-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2m2019-05-15 15:57:26.610[0;39m [31mERROR [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[freshExecutor-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - was unable to refresh its cache! status = Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1440)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[2m2019-05-15 15:57:56.624[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[tbeatExecutor-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - Re-registering apps/GS-SPRING-BOOT
+[2m2019-05-15 15:57:56.624[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[tbeatExecutor-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot: registering service...
+[2m2019-05-15 15:57:56.637[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[tbeatExecutor-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - registration status: 204
+[2m2019-05-15 15:58:26.934[0;39m [32mDEBUG [gs-spring-boot,632ccd9d878406fe,632ccd9d878406fe,false][0;39m [35m26726[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/actuator/info", parameters={}
+[2m2019-05-15 15:58:26.976[0;39m [32mDEBUG [gs-spring-boot,632ccd9d878406fe,632ccd9d878406fe,false][0;39m [35m26726[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 16:01:56.430[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 16:06:57.103[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 16:11:57.105[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 16:16:57.106[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 16:21:57.107[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 16:24:31.427[0;39m [32mDEBUG [gs-spring-boot,712aa83acb1f0f74,3cc325ffcbbaea51,false][0;39m [35m26726[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 16:24:31.432[0;39m [32m INFO [gs-spring-boot,712aa83acb1f0f74,3cc325ffcbbaea51,false][0;39m [35m26726[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 16:24:31.435[0;39m [32mDEBUG [gs-spring-boot,712aa83acb1f0f74,3cc325ffcbbaea51,false][0;39m [35m26726[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 16:26:57.108[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 16:27:56.515[0;39m [32mDEBUG [gs-spring-boot,5788e050de3d6ca5,d52fc4c8c11343eb,false][0;39m [35m26726[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 16:27:56.516[0;39m [32m INFO [gs-spring-boot,5788e050de3d6ca5,d52fc4c8c11343eb,false][0;39m [35m26726[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 16:27:56.518[0;39m [32mDEBUG [gs-spring-boot,5788e050de3d6ca5,d52fc4c8c11343eb,false][0;39m [35m26726[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 16:30:28.526[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Unregistering application GS-SPRING-BOOT with eureka with status DOWN
+[2m2019-05-15 16:30:28.526[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557909028526, current=DOWN, previous=UP]
+[2m2019-05-15 16:30:28.526[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot: registering service...
+[2m2019-05-15 16:30:28.529[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 16:30:28.532[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - registration status: 204
+[2m2019-05-15 16:30:28.535[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Shutting down DiscoveryClient ...
+[2m2019-05-15 16:30:28.538[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m26726[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36m.s.c.a.CommonAnnotationBeanPostProcessor[0;39m [2m:[0;39m Destroy method on bean with name 'scopedTarget.eurekaClient' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+[2m2019-05-15 16:30:55.030[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$62d047c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 16:30:55.261[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2019-05-15 16:30:56.203[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.boot.actuate.endpoint.EndpointId    [0;39m [2m:[0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2m2019-05-15 16:30:56.525[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=ad036997-8043-340a-b986-d21623e50167
+[2m2019-05-15 16:30:56.764[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$62d047c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 16:30:57.171[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2019-05-15 16:30:57.200[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2019-05-15 16:30:57.200[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.17]
+[2m2019-05-15 16:30:57.389[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2019-05-15 16:30:57.390[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.web.context.ContextLoader           [0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2110 ms
+[2m2019-05-15 16:30:57.543[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 16:30:57.544[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 16:30:57.549[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.netflix.config.DynamicPropertyFactory [0;39m [2m:[0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5762658b
+[2m2019-05-15 16:30:58.383[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 16:30:58.383[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 16:30:58.706[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 16:30:59.412[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Current Hystrix plugins configuration is [concurrencyStrategy [com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategyDefault@6885ed19],eventNotifier [com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifierDefault@10817f46],metricPublisher [io.micrometer.core.instrument.binder.hystrix.MicrometerMetricsPublisher@2d4a3e13],propertiesStrategy [com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategyDefault@4a22e4d7],]
+[2m2019-05-15 16:30:59.413[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Registering Sleuth Hystrix Concurrency Strategy.
+[2m2019-05-15 16:30:59.428[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Current RxJava plugins configuration is [schedulersHook [rx.plugins.RxJavaSchedulersHook@115c946b],errorHandler [rx.plugins.RxJavaPlugins$1@79ca7bea],observableExecutionHook [rx.plugins.RxJavaObservableExecutionHookDefault@54f6b629],]
+[2m2019-05-15 16:30:59.429[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Registering Sleuth RxJava Schedulers Hook.
+[2m2019-05-15 16:30:59.447[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2019-05-15 16:30:59.577[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.eureka.InstanceInfoFactory      [0;39m [2m:[0;39m Setting initial instance status as: STARTING
+[2m2019-05-15 16:30:59.610[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Initializing Eureka in region us-east-1
+[2m2019-05-15 16:30:59.775[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON encoding codec LegacyJacksonJson
+[2m2019-05-15 16:30:59.776[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON decoding codec LegacyJacksonJson
+[2m2019-05-15 16:30:59.896[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML encoding codec XStreamXml
+[2m2019-05-15 16:30:59.896[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML decoding codec XStreamXml
+[2m2019-05-15 16:31:00.076[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 16:31:00.094[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Disable delta property : false
+[2m2019-05-15 16:31:00.094[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Single vip registry refresh property : null
+[2m2019-05-15 16:31:00.094[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Force full registry fetch : false
+[2m2019-05-15 16:31:00.095[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application is null : false
+[2m2019-05-15 16:31:00.095[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Registered Applications size is zero : true
+[2m2019-05-15 16:31:00.095[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application version is -1: true
+[2m2019-05-15 16:31:00.095[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Getting all instance registry info from the eureka server
+[2m2019-05-15 16:31:00.260[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m The response status is 200
+[2m2019-05-15 16:31:00.263[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Starting heartbeat executor: renew interval is: 30
+[2m2019-05-15 16:31:00.266[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.discovery.InstanceInfoReplicator    [0;39m [2m:[0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2m2019-05-15 16:31:00.270[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Discovery Client initialized at timestamp 1557909060269 with initial instances count: 3
+[2m2019-05-15 16:31:00.279[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Registering application GS-SPRING-BOOT with eureka with status UP
+[2m2019-05-15 16:31:00.280[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557909060280, current=UP, previous=STARTING]
+[2m2019-05-15 16:31:00.282[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot: registering service...
+[2m2019-05-15 16:31:00.341[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - registration status: 204
+[2m2019-05-15 16:31:00.353[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2019-05-15 16:31:00.356[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[           main][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m Started ApplicationTest in 6.814 seconds (JVM running for 7.895)
+[2m2019-05-15 16:31:01.022[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[on(8)-127.0.0.1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2019-05-15 16:31:01.022[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[on(8)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2019-05-15 16:31:01.023[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[on(8)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Detected StandardServletMultipartResolver
+[2m2019-05-15 16:31:01.044[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[on(8)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2m2019-05-15 16:31:01.044[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[on(8)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 22 ms
+[2m2019-05-15 16:31:10.516[0;39m [32mDEBUG [gs-spring-boot,edbfc708c9ff595a,e997be3d56d1c03a,false][0;39m [35m28424[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 16:31:10.535[0;39m [32m INFO [gs-spring-boot,edbfc708c9ff595a,e997be3d56d1c03a,false][0;39m [35m28424[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 16:31:10.556[0;39m [32mDEBUG [gs-spring-boot,edbfc708c9ff595a,e997be3d56d1c03a,false][0;39m [35m28424[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 16:31:48.754[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Unregistering application GS-SPRING-BOOT with eureka with status DOWN
+[2m2019-05-15 16:31:48.754[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557909108754, current=DOWN, previous=UP]
+[2m2019-05-15 16:31:48.754[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot: registering service...
+[2m2019-05-15 16:31:48.758[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 16:31:48.763[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - registration status: 204
+[2m2019-05-15 16:31:48.764[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Shutting down DiscoveryClient ...
+[2m2019-05-15 16:31:48.768[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28424[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36m.s.c.a.CommonAnnotationBeanPostProcessor[0;39m [2m:[0;39m Destroy method on bean with name 'scopedTarget.eurekaClient' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+[2m2019-05-15 16:32:10.310[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2ec407ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 16:32:10.542[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2019-05-15 16:32:11.755[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.boot.actuate.endpoint.EndpointId    [0;39m [2m:[0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2m2019-05-15 16:32:12.173[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=ad036997-8043-340a-b986-d21623e50167
+[2m2019-05-15 16:32:12.433[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2ec407ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 16:32:12.990[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2019-05-15 16:32:13.030[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2019-05-15 16:32:13.030[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.17]
+[2m2019-05-15 16:32:13.305[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2019-05-15 16:32:13.305[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.web.context.ContextLoader           [0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2744 ms
+[2m2019-05-15 16:32:13.531[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 16:32:13.531[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 16:32:13.540[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.netflix.config.DynamicPropertyFactory [0;39m [2m:[0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2e17a321
+[2m2019-05-15 16:32:14.342[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 16:32:14.343[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 16:32:14.664[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 16:32:15.313[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Current Hystrix plugins configuration is [concurrencyStrategy [com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategyDefault@28768e25],eventNotifier [com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifierDefault@310d57b1],metricPublisher [io.micrometer.core.instrument.binder.hystrix.MicrometerMetricsPublisher@143fefaf],propertiesStrategy [com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategyDefault@18ffca6c],]
+[2m2019-05-15 16:32:15.313[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Registering Sleuth Hystrix Concurrency Strategy.
+[2m2019-05-15 16:32:15.327[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Current RxJava plugins configuration is [schedulersHook [rx.plugins.RxJavaSchedulersHook@430df350],errorHandler [rx.plugins.RxJavaPlugins$1@1373e3ee],observableExecutionHook [rx.plugins.RxJavaObservableExecutionHookDefault@175c5c3a],]
+[2m2019-05-15 16:32:15.327[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Registering Sleuth RxJava Schedulers Hook.
+[2m2019-05-15 16:32:15.342[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2019-05-15 16:32:15.460[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.eureka.InstanceInfoFactory      [0;39m [2m:[0;39m Setting initial instance status as: STARTING
+[2m2019-05-15 16:32:15.491[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Initializing Eureka in region us-east-1
+[2m2019-05-15 16:32:15.658[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON encoding codec LegacyJacksonJson
+[2m2019-05-15 16:32:15.659[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON decoding codec LegacyJacksonJson
+[2m2019-05-15 16:32:15.775[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML encoding codec XStreamXml
+[2m2019-05-15 16:32:15.776[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML decoding codec XStreamXml
+[2m2019-05-15 16:32:15.946[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 16:32:15.963[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Disable delta property : false
+[2m2019-05-15 16:32:15.963[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Single vip registry refresh property : null
+[2m2019-05-15 16:32:15.963[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Force full registry fetch : false
+[2m2019-05-15 16:32:15.963[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application is null : false
+[2m2019-05-15 16:32:15.963[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Registered Applications size is zero : true
+[2m2019-05-15 16:32:15.963[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application version is -1: true
+[2m2019-05-15 16:32:15.963[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Getting all instance registry info from the eureka server
+[2m2019-05-15 16:32:16.108[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m The response status is 200
+[2m2019-05-15 16:32:16.111[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Starting heartbeat executor: renew interval is: 30
+[2m2019-05-15 16:32:16.113[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.discovery.InstanceInfoReplicator    [0;39m [2m:[0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2m2019-05-15 16:32:16.117[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Discovery Client initialized at timestamp 1557909136116 with initial instances count: 3
+[2m2019-05-15 16:32:16.124[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Registering application GS-SPRING-BOOT with eureka with status UP
+[2m2019-05-15 16:32:16.124[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557909136124, current=UP, previous=STARTING]
+[2m2019-05-15 16:32:16.126[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot: registering service...
+[2m2019-05-15 16:32:16.171[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - registration status: 204
+[2m2019-05-15 16:32:16.181[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2019-05-15 16:32:16.183[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[           main][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m Started ApplicationTest in 7.94 seconds (JVM running for 8.869)
+[2m2019-05-15 16:32:16.704[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[n(10)-127.0.0.1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2019-05-15 16:32:16.704[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[n(10)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2019-05-15 16:32:16.705[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[n(10)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Detected StandardServletMultipartResolver
+[2m2019-05-15 16:32:16.723[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[n(10)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2m2019-05-15 16:32:16.724[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[n(10)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 19 ms
+[2m2019-05-15 16:32:28.058[0;39m [32mDEBUG [gs-spring-boot,0b7eb33a0e441e89,3a254c3a34d0db5e,false][0;39m [35m28711[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 16:32:28.078[0;39m [32m INFO [gs-spring-boot,0b7eb33a0e441e89,3a254c3a34d0db5e,false][0;39m [35m28711[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 16:32:28.095[0;39m [32mDEBUG [gs-spring-boot,0b7eb33a0e441e89,3a254c3a34d0db5e,false][0;39m [35m28711[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 16:33:15.613[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[      Thread-23][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Unregistering application GS-SPRING-BOOT with eureka with status DOWN
+[2m2019-05-15 16:33:15.614[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[      Thread-23][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557909195614, current=DOWN, previous=UP]
+[2m2019-05-15 16:33:15.614[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot: registering service...
+[2m2019-05-15 16:33:15.620[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - registration status: 204
+[2m2019-05-15 16:33:15.620[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[      Thread-23][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 16:33:15.626[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[      Thread-23][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Shutting down DiscoveryClient ...
+[2m2019-05-15 16:33:15.628[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28711[0;39m [2m---[0;39m [2m[      Thread-23][0;39m [36m.s.c.a.CommonAnnotationBeanPostProcessor[0;39m [2m:[0;39m Destroy method on bean with name 'scopedTarget.eurekaClient' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+[2m2019-05-15 16:33:21.712[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4499591e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 16:33:21.898[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2019-05-15 16:33:22.867[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.boot.actuate.endpoint.EndpointId    [0;39m [2m:[0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[2m2019-05-15 16:33:23.220[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=ad036997-8043-340a-b986-d21623e50167
+[2m2019-05-15 16:33:23.476[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4499591e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2019-05-15 16:33:23.871[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2019-05-15 16:33:23.902[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2019-05-15 16:33:23.903[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.17]
+[2m2019-05-15 16:33:24.144[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2019-05-15 16:33:24.144[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.web.context.ContextLoader           [0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 2229 ms
+[2m2019-05-15 16:33:24.301[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 16:33:24.301[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 16:33:24.306[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.netflix.config.DynamicPropertyFactory [0;39m [2m:[0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3762c4fc
+[2m2019-05-15 16:33:25.121[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m No URLs will be polled as dynamic configuration sources.
+[2m2019-05-15 16:33:25.122[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.c.sources.URLConfigurationSource    [0;39m [2m:[0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[2m2019-05-15 16:33:25.470[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 16:33:26.166[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Current Hystrix plugins configuration is [concurrencyStrategy [com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategyDefault@58a3d521],eventNotifier [com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifierDefault@14d8e132],metricPublisher [io.micrometer.core.instrument.binder.hystrix.MicrometerMetricsPublisher@7f4a1cac],propertiesStrategy [com.netflix.hystrix.strategy.properties.HystrixPropertiesStrategyDefault@4a1a412e],]
+[2m2019-05-15 16:33:26.167[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.i.h.SleuthHystrixConcurrencyStrategy[0;39m [2m:[0;39m Registering Sleuth Hystrix Concurrency Strategy.
+[2m2019-05-15 16:33:26.181[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Current RxJava plugins configuration is [schedulersHook [rx.plugins.RxJavaSchedulersHook@7b9e25bd],errorHandler [rx.plugins.RxJavaPlugins$1@2d206a71],observableExecutionHook [rx.plugins.RxJavaObservableExecutionHookDefault@37e7c4cc],]
+[2m2019-05-15 16:33:26.182[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.i.r.SleuthRxJavaSchedulersHook  [0;39m [2m:[0;39m Registering Sleuth RxJava Schedulers Hook.
+[2m2019-05-15 16:33:26.198[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+[2m2019-05-15 16:33:26.329[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.eureka.InstanceInfoFactory      [0;39m [2m:[0;39m Setting initial instance status as: STARTING
+[2m2019-05-15 16:33:26.361[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Initializing Eureka in region us-east-1
+[2m2019-05-15 16:33:26.555[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON encoding codec LegacyJacksonJson
+[2m2019-05-15 16:33:26.555[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON decoding codec LegacyJacksonJson
+[2m2019-05-15 16:33:26.673[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML encoding codec XStreamXml
+[2m2019-05-15 16:33:26.673[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML decoding codec XStreamXml
+[2m2019-05-15 16:33:26.846[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 16:33:26.863[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Disable delta property : false
+[2m2019-05-15 16:33:26.863[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Single vip registry refresh property : null
+[2m2019-05-15 16:33:26.863[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Force full registry fetch : false
+[2m2019-05-15 16:33:26.864[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application is null : false
+[2m2019-05-15 16:33:26.864[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Registered Applications size is zero : true
+[2m2019-05-15 16:33:26.864[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application version is -1: true
+[2m2019-05-15 16:33:26.864[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Getting all instance registry info from the eureka server
+[2m2019-05-15 16:33:27.023[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m The response status is 200
+[2m2019-05-15 16:33:27.026[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Starting heartbeat executor: renew interval is: 30
+[2m2019-05-15 16:33:27.029[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.discovery.InstanceInfoReplicator    [0;39m [2m:[0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2m2019-05-15 16:33:27.034[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Discovery Client initialized at timestamp 1557909207033 with initial instances count: 3
+[2m2019-05-15 16:33:27.043[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Registering application GS-SPRING-BOOT with eureka with status UP
+[2m2019-05-15 16:33:27.043[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557909207043, current=UP, previous=STARTING]
+[2m2019-05-15 16:33:27.046[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot: registering service...
+[2m2019-05-15 16:33:27.108[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - registration status: 204
+[2m2019-05-15 16:33:27.117[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2019-05-15 16:33:27.120[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[           main][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m Started ApplicationTest in 6.95 seconds (JVM running for 7.68)
+[2m2019-05-15 16:33:27.600[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[on(5)-127.0.0.1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2019-05-15 16:33:27.601[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[on(5)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2019-05-15 16:33:27.601[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[on(5)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Detected StandardServletMultipartResolver
+[2m2019-05-15 16:33:27.621[0;39m [32mDEBUG [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[on(5)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2m2019-05-15 16:33:27.622[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[on(5)-127.0.0.1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 21 ms
+[2m2019-05-15 16:33:59.114[0;39m [32mDEBUG [gs-spring-boot,dfc1a96181756980,dfc1a96181756980,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/actuator/info", parameters={}
+[2m2019-05-15 16:33:59.170[0;39m [32mDEBUG [gs-spring-boot,dfc1a96181756980,dfc1a96181756980,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 16:38:26.867[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 16:43:26.868[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 16:48:26.869[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 16:53:26.870[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 16:58:26.872[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 17:03:26.873[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 17:08:26.874[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 17:13:27.368[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 17:18:27.369[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 17:23:27.371[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 17:24:52.493[0;39m [32mDEBUG [gs-spring-boot,62960f07245953d0,9f6385fb9ddd6851,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:24:52.497[0;39m [32m INFO [gs-spring-boot,62960f07245953d0,9f6385fb9ddd6851,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:24:52.501[0;39m [32mDEBUG [gs-spring-boot,62960f07245953d0,9f6385fb9ddd6851,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:26:15.958[0;39m [32mDEBUG [gs-spring-boot,027c9db82bac1a09,470f077b5b979f28,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:26:15.960[0;39m [32m INFO [gs-spring-boot,027c9db82bac1a09,470f077b5b979f28,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:26:15.967[0;39m [32mDEBUG [gs-spring-boot,027c9db82bac1a09,470f077b5b979f28,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:28:27.372[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 17:29:24.483[0;39m [32mDEBUG [gs-spring-boot,625235b1e2034193,2aa09060b022dfdb,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:29:24.485[0;39m [32m INFO [gs-spring-boot,625235b1e2034193,2aa09060b022dfdb,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:29:24.487[0;39m [32mDEBUG [gs-spring-boot,625235b1e2034193,2aa09060b022dfdb,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:33:27.373[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 17:33:38.141[0;39m [32mDEBUG [gs-spring-boot,66e99db5c44dc2bd,4cfd83fb2c2f7915,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:33:38.142[0;39m [32m INFO [gs-spring-boot,66e99db5c44dc2bd,4cfd83fb2c2f7915,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:33:38.144[0;39m [32mDEBUG [gs-spring-boot,66e99db5c44dc2bd,4cfd83fb2c2f7915,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:33:47.141[0;39m [32mDEBUG [gs-spring-boot,ce3785d049045f09,94cf9d3d2eda57b0,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:33:47.144[0;39m [32m INFO [gs-spring-boot,ce3785d049045f09,94cf9d3d2eda57b0,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:33:47.145[0;39m [32mDEBUG [gs-spring-boot,ce3785d049045f09,94cf9d3d2eda57b0,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:36:51.750[0;39m [32mDEBUG [gs-spring-boot,eda3c1c167635cbe,18d1e7ddf5314987,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:36:51.752[0;39m [32m INFO [gs-spring-boot,eda3c1c167635cbe,18d1e7ddf5314987,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:36:51.753[0;39m [32mDEBUG [gs-spring-boot,eda3c1c167635cbe,18d1e7ddf5314987,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:36:54.875[0;39m [32mDEBUG [gs-spring-boot,fb622ee704035530,d373853fb793fae6,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:36:54.877[0;39m [32m INFO [gs-spring-boot,fb622ee704035530,d373853fb793fae6,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:36:54.879[0;39m [32mDEBUG [gs-spring-boot,fb622ee704035530,d373853fb793fae6,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:38:27.374[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 17:40:37.086[0;39m [32mDEBUG [gs-spring-boot,777795cdccdae56a,10873132a0384437,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:40:37.087[0;39m [32m INFO [gs-spring-boot,777795cdccdae56a,10873132a0384437,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:40:37.088[0;39m [32mDEBUG [gs-spring-boot,777795cdccdae56a,10873132a0384437,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:40:40.062[0;39m [32mDEBUG [gs-spring-boot,1ee4f58e56a6d5db,f85c4d49680e24ac,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:40:40.064[0;39m [32m INFO [gs-spring-boot,1ee4f58e56a6d5db,f85c4d49680e24ac,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:40:40.065[0;39m [32mDEBUG [gs-spring-boot,1ee4f58e56a6d5db,f85c4d49680e24ac,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:41:36.967[0;39m [32mDEBUG [gs-spring-boot,b5ddd71ca21c7c24,e9aa30551eb57b54,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:41:36.969[0;39m [32m INFO [gs-spring-boot,b5ddd71ca21c7c24,e9aa30551eb57b54,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:41:36.971[0;39m [32mDEBUG [gs-spring-boot,b5ddd71ca21c7c24,e9aa30551eb57b54,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:41:40.562[0;39m [32mDEBUG [gs-spring-boot,6ba2f9ef94d50113,6f5a5b60d8d206c0,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:41:40.563[0;39m [32m INFO [gs-spring-boot,6ba2f9ef94d50113,6f5a5b60d8d206c0,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:41:40.564[0;39m [32mDEBUG [gs-spring-boot,6ba2f9ef94d50113,6f5a5b60d8d206c0,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:41:43.566[0;39m [32mDEBUG [gs-spring-boot,37092632971db831,e11b1c8905e27327,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:41:43.567[0;39m [32m INFO [gs-spring-boot,37092632971db831,e11b1c8905e27327,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:41:43.569[0;39m [32mDEBUG [gs-spring-boot,37092632971db831,e11b1c8905e27327,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:42:04.028[0;39m [32mDEBUG [gs-spring-boot,601bdcd622f51542,41762047183df790,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:42:04.033[0;39m [32m INFO [gs-spring-boot,601bdcd622f51542,41762047183df790,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:42:04.041[0;39m [32mDEBUG [gs-spring-boot,601bdcd622f51542,41762047183df790,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:42:06.647[0;39m [32mDEBUG [gs-spring-boot,2789d02a05c2875b,77bd0de34e4bd8ba,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:42:06.649[0;39m [32m INFO [gs-spring-boot,2789d02a05c2875b,77bd0de34e4bd8ba,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:42:06.661[0;39m [32mDEBUG [gs-spring-boot,2789d02a05c2875b,77bd0de34e4bd8ba,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:42:09.793[0;39m [32mDEBUG [gs-spring-boot,250514db5f456e66,03da9585d540ddc2,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-8][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m GET "/t", parameters={}
+[2m2019-05-15 17:42:09.794[0;39m [32m INFO [gs-spring-boot,250514db5f456e66,03da9585d540ddc2,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-8][0;39m [36mhello.ApplicationTest                   [0;39m [2m:[0;39m test................................
+[2m2019-05-15 17:42:09.796[0;39m [32mDEBUG [gs-spring-boot,250514db5f456e66,03da9585d540ddc2,false][0;39m [35m28962[0;39m [2m---[0;39m [2m[nio-8080-exec-8][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed 200 OK
+[2m2019-05-15 17:43:27.375[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 17:48:27.375[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 17:53:27.376[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2019-05-15 17:57:01.199[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Unregistering application GS-SPRING-BOOT with eureka with status DOWN
+[2m2019-05-15 17:57:01.199[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1557914221199, current=DOWN, previous=UP]
+[2m2019-05-15 17:57:01.200[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot: registering service...
+[2m2019-05-15 17:57:01.204[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[nfoReplicator-0][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GS-SPRING-BOOT/101.225.90.131:gs-spring-boot - registration status: 204
+[2m2019-05-15 17:57:01.204[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mo.s.s.concurrent.ThreadPoolTaskExecutor [0;39m [2m:[0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+[2m2019-05-15 17:57:01.211[0;39m [32m INFO [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Shutting down DiscoveryClient ...
+[2m2019-05-15 17:57:01.213[0;39m [33m WARN [gs-spring-boot,,,][0;39m [35m28962[0;39m [2m---[0;39m [2m[      Thread-21][0;39m [36m.s.c.a.CommonAnnotationBeanPostProcessor[0;39m [2m:[0;39m Destroy method on bean with name 'scopedTarget.eurekaClient' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
