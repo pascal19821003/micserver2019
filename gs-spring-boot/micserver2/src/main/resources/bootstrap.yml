@@ -1,6 +1,9 @@
 spring:
   application:
     name: micserver2
+  devtools:
+    restart:
+      enabled: false
   cloud:
     config:
       uri: ${CONFIG_SERVER_URL:http://localhost:8888}

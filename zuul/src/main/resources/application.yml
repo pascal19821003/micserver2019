@@ -9,8 +9,8 @@ eureka:
 zuul:
   routes:
     ts:
-      path: /ts/**
-      url: http://localhost:8081/ts
+      path: /s/**
+      url: http://localhost:8081/s1
 
 
 logging:
